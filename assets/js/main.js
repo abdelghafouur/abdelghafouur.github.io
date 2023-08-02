@@ -46,32 +46,6 @@ function addActiveLink() {
 
 window.addEventListener("scroll", addActiveLink);
 
-// increment counter
-function startCounter(counter) {
-  // Get the target number
-  const targetNumber = counter.getAttribute("data-target");
-  const increment = setInterval(() => {
-    counter.textContent++;
-
-    if (counter.textContent == targetNumber) {
-      clearInterval(increment);
-    }
-  }, 2000 / targetNumber);
-}
-
-const counterSection = document.querySelector(".counter");
-const counters = document.querySelectorAll(".counter__number");
-let started = false;
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY >= counterSection.offsetTop - 400) {
-    if (!started) {
-      counters.forEach((counter) => startCounter(counter));
-    }
-    started = true;
-  }
-});
-
 
 // Scrolltop
 const scrolltop = document.getElementById("scrolltop");
@@ -93,16 +67,16 @@ const sr = ScrollReveal({
   reset: false,
 });
 
-sr.reveal(".home__content, .about__img, .service__content, .contact__content", {
+sr.reveal(".home__content, .about__img", {
   origin: "left",
 });
 
-sr.reveal(".home__img, .about__content, .service__info, .contact__form", {
+sr.reveal(".home__img, .about__content", {
   origin: "right",
 });
 
 sr.reveal(
-  ".skills__wrapper, .counter__wrapper, .portfolio__wrapper, .testimonial__wrapper, .blog__wrapper, .footer__content",
+  ".skills__wrapper, .portfolio__wrapper .blog__wrapper, .footer__content",
   {
     origin: "bottom",
   }
@@ -118,5 +92,5 @@ var typed = new Typed(".input",{
 })
 
 document.getElementById('letsTalkButton').addEventListener('click', function() {
-window.location.href = 'mailto:abdelghafourlahnida@gmail.com';
+window.location.href = 'mailto:abdelghafourlahnida01@gmail.com';
 });
