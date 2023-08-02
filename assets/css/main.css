@@ -335,7 +335,6 @@ body {
   animation: imgg 2s ease-in-out infinite;
   animation-delay: 2s;
   border-radius: 50%;
-  margin-top: -25px;
 }
 @keyframes imgg {
   0%{
