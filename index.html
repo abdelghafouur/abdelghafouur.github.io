@@ -350,13 +350,13 @@
                                     Work Experience
                                 </h3>
                                 <div class="experience__header">
-                                    <h3 class="experience__name">Web Site Ecole Jah Informatique</h3>
-                                    <span class="experience__date">04/2023 - 05/2023</span>
+                                    <h3 class="experience__name">Jah Informatique Plus</h3>
+                                    <span class="experience__date">03/2023 - 04/2023</span>
                                 </div>
                                 <p class="experience__description">
-                                    Optimisation de la promotion et de la gestion des inscriptions des étudiants pour l'école Jah informatique .
-                                </p>
-                                <span class="experience__place">Ecole Jah Informatique</span>
+                                    I developed the official website of the institution, using the
+                                    latest technologies both for the user interface and backend
+                                    programming to ensure its efficiency.                                </p>
                             </div>
                         </div>
                         <!--========= Work Experience 3 =================-->
@@ -367,18 +367,16 @@
                                     Work Experience
                                 </h3>
                                 <div class="experience__header">
-                                    <h3 class="experience__name">Le projet réalisé : gestion d'absence.</h3>
+                                    <h3 class="experience__name">Specialized Institute of Applied Information
+                                        Technology (NTIC) – Marrakech</h3>
                                     <span class="experience__date">01/2023 - 03/2023</span>
                                 </div>
                                 <p class="experience__description">
-                                    Une application web de gestion d'absence est un outil 
-                                    en ligne qui permet aux administrateurs et aux 
-                                    surveillants de gérer les demandes et les 
-                                    notifications d'absence.
+                                    I participated in the development of an absence management
+                                    web application, creating an online tool that enables
+                                    administrators and supervisors to efficiently handle absence
+                                    requests and notifications.
                                 </p>
-                                <span class="experience__place">Institut Spécialisé de Technologie
-                                    Appliquée NTIC Sidi Youssef Ben Ali –
-                                    Marrakech.</span>
                             </div>
                         </div>
                     </div>
@@ -464,14 +462,14 @@
                                   user-friendly platform for online courses.
                                    offering an intuitive and interactive user
                                     interface for learners to browse and access 
-                                    a wide range of courses
+                                    a wide range of courses.
                             </p>
                         </div>
                     </div>
                     <a href="https://github.com/abdelghafouur/BackEnd_WebSiteCourses_likeUdemy_With_API_Laravel" target="_blank" class="portfolio__link">
                         <i class="ri-github-fill"></i>
                     </a>
-                    <a href="https://www.linkedin.com/posts/abdelghafourlahnida_webdevelopment-laravel-reactjs-activity-7093547216279146496-Asa-?utm_source=share&utm_medium=member_desktop" target="_blank" class="cssbuttons-io-button portfolio__link2"> Demo
+                    <a href="https://www.linkedin.com/posts/abdelghafourlahnida1_laravel-graduationprojectl-reactjs-activity-7126697955499155456-vAyW/" target="_blank" class="cssbuttons-io-button portfolio__link2"> Demo
                         <div class="icon">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"></path></svg>
                         </div>
@@ -608,13 +606,20 @@
             </div>
         </div>
         <div class="footer__copyright container">
-            <p>&copy; Copyright 2023 Abdelghafouur. All Rights Reserved. </p>
+            <p id="copyright">&copy; Copyright <span id="currentYear"></span> Abdelghafouur. All Rights Reserved. </p>
         </div>
     </footer>
     <a href="#" id="scrolltop" class="scrolltop">
         <i class="ri-arrow-up-line"></i>
     </a>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var currentYear = new Date().getFullYear();
+            var currentYearElement = document.getElementById('currentYear');
+            currentYearElement.textContent = currentYear;
+        });
+    </script>
     <!--=================== ScrollReveal ==================-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
