@@ -453,7 +453,7 @@ body {
 
 .d-grid {
   display: grid;
-  gap: 3rem;
+  gap: 9rem;
 }
 
 .experience__item {
@@ -892,16 +892,16 @@ body {
   }
 
   .skills__wrapper {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .portfolio__wrapper {
-    grid-template-columns: repeat(2, 28rem);
+    grid-template-columns: repeat(3, 28rem);
     justify-content: center;
   }
 
   .contact__wrapper {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
   }
 
