@@ -866,7 +866,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .home__wrapper {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
 
@@ -879,7 +879,7 @@ body {
   }
 
   .about__wrapper {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
   }
 
