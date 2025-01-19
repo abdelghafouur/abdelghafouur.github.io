@@ -66,14 +66,14 @@
 }
 .slide-roll .roll-box-revers {
 	position: relative;
-	animation: slide-har-revers 80s linear infinite;
+	animation: slide-har-revers 20s linear infinite;
 	display: flex;
 }
 .slide-roll .roll-box {
 	display: flex;
 	align-items: center;
 	position: relative;
-	animation: slide-har 80s linear infinite;
+	animation: slide-har 20s linear infinite;
 }
 .roll-item {
 	display: flex;
